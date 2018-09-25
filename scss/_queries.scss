@@ -1,0 +1,101 @@
+// Tablet and Small Laptop
+@include mediaM {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .masthead {
+    background-image: url("../images/rewind.jpg");
+    padding: 199px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -7px;
+    margin-bottom: -20px;
+    background-size: 100%;
+  }
+
+  .begin {
+    background-color: $sec-color;
+  }
+
+  header {
+    grid-column: 1/3;
+  }
+
+  main {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 30px;
+  }
+
+  .section {
+    border: 4px solid $tetr-color;
+    border-radius: 2%;
+    background-color: $fifth-color;
+  }
+
+  .aside {
+    margin-right: 9px;
+    grid-column: 1/1;
+  }
+
+  .footer {
+    margin-left: 9px;
+    grid-column: 2/4;
+    text-align: right;
+
+    &__auteur {
+      font-size: 20px;
+    }
+  }
+}
+
+// Laptop/Desktop
+@include mediaL {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .masthead {
+    background-repeat: no-repeat;
+    background-image: url("../images/rewind.jpg");
+    background-size: cover;
+    background-size: 100%;
+  }
+
+  main {
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: -10px;
+  }
+
+  header {
+    grid-column: 1/4;
+  }
+
+  .begin {
+    background-color: $sixth-color;
+    padding: 1px 30px;
+  }
+
+  .section {
+    border: 4px solid $tetr-color;
+    border-radius: 2%;
+    background-color: $sec-color;
+  }
+
+  .aside {
+    margin-right: 12px;
+  }
+
+  .footer {
+    margin-left: 5px;
+    grid-column: 2/4;
+    text-align: right;
+    grid-gap: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+// Variables
+$pri-color: green;
+$sec-color: red;
+$tetr-color: white;
+$quad-color: black;
+$fifth-color: brown;
+$sixth-color: blue;
+
+// Media Queries
+@mixin mediaM {
+  @media screen and (min-width: 716px) {
+    @content;
+  }
+}
+
+@mixin mediaL {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

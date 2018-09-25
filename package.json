@@ -1,0 +1,14 @@
+{
+  "name": "opdacht2bemmie",
+  "version": "1.0.0",
+  "description": "Using the BEM Method and using Sass on one of my past exercises",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Joël Lakhai",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
